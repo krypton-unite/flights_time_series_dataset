@@ -8,7 +8,7 @@ with open('HISTORY.md') as history_file:
 
 setup(
     name='flights_time_series_dataset',
-    version='0.0.0',
+    version='0.0.1',
     description='Flights time series dataset for time-series-predictor.',
     long_description_content_type="text/markdown",
     long_description=README + '\n\n' + HISTORY,
