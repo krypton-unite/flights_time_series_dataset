@@ -76,6 +76,7 @@ matplotlib==3.3.2 \
     --hash=sha256:f0268613073df055bcc6a490de733012f2cf4fe191c1adb74e41cec8add1a165 \
     # via seaborn
 numpy==1.19.0 \
+    --hash=sha256:be62aeff8f2f054eff7725f502f6228298891fd648dc2630e03e44bf63e8cee0 \
     # via matplotlib, pandas, scipy, seaborn, torch
 pandas==1.1.4 \
     --hash=sha256:09e0503758ad61afe81c9069505f8cb8c1e36ea8cc1e6826a95823ef5b327daf \
@@ -180,9 +181,9 @@ six==1.15.0 \
     --hash=sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259 \
     --hash=sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced \
     # via python-dateutil
-time-series-dataset==0.0.1 \
-    --hash=sha256:22e30955cbf51c62b1b2809d07bf0b8e3d6112156440fb264e94e7d4cfac0d14 \
-    --hash=sha256:779a206afe065d52383181571987628c71551271978d09df296e4d2f2fbe0e42 \
+time-series-dataset==0.0.2 \
+    --hash=sha256:1a4e5df3af0b0b280da9774a6c6b0c7fae962111db429b0b7b1f50846b74c0b6 \
+    --hash=sha256:7922e32780672092ca335ab0c83d41747a65c8613ae2d5a8a1d4edb54bca36c9 \
     # via flights_time_series_dataset (setup.py)
 torch==1.7.0+cu110 \
     --hash=sha256:a65442a40de44dc33d59015cdd62d8453b657147496cd52d0d098ab4a4f42f00 \
