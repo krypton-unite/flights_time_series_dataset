@@ -7,6 +7,7 @@ import math
 import numpy as np
 import pandas as pd
 import seaborn as sns
+from datetime import datetime
 
 from time_series_dataset import TimeSeriesDataset
 
@@ -102,3 +103,6 @@ class FlightsDataset(TimeSeriesDataset):
                 create_year_dataframe(new_years), ignore_index=True)
         input_features = [month_number_df, year_df]
         return _raw_make_predictor(input_features, -1)
+    
+def convert_year_month_array_to_datetime(year_month_array):
+    return datetime(year=year_month_array[1], month=year_month_array[0], day=15)
