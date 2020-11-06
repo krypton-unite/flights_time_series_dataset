@@ -6,6 +6,7 @@ from flights_time_series_dataset import FlightsDataset, convert_year_month_array
 from datetime import datetime
 import numpy as np
 
+
 def test_dataset_shape():
     flights_dataset = FlightsDataset()
     assert flights_dataset.get_y_shape() == (1, 144, 1)
@@ -13,15 +14,18 @@ def test_dataset_shape():
     fd = flights_dataset.make_future_dataframe(12)
     assert fd.shape == (156, 2)
 
+
 def test_conversion_to_datetime():
     flights_dataset = FlightsDataset()
-    first_date = flights_dataset.x[0,0,:]
+    first_date = flights_dataset.x[0, 0, :]
     dt = convert_year_month_array_to_datetime(first_date)
     assert dt == datetime(1949, 1, 15, 0, 0)
 
+
 def test_vector_conversion_to_datetime():
     flights_dataset = FlightsDataset()
-    dt_vector = convert_year_month_array_to_datetime(flights_dataset.x[0,0:5,:])
+    dt_vector = convert_year_month_array_to_datetime(
+        flights_dataset.x[0, 0:5, :])
     expected_output_vector = [
         datetime(1949, 1, 15),
         datetime(1949, 2, 15),
