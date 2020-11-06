@@ -32,7 +32,9 @@ setup(
         'dev': [
             'bumpversion',
             'twine',
-            'wheel'
+            'wheel',
+            'pylint',
+            'autopep8'
         ]
     }
 )
