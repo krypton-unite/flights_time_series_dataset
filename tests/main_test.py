@@ -12,14 +12,14 @@ def test_dataset_shape():
     assert flights_dataset.get_y_shape() == (1, 144, 1)
     assert flights_dataset.get_x_shape() == (1, 144, 2)
     fd = flights_dataset.make_future_dataframe(12)
-    assert fd.shape == (156, 2)
+    assert fd.shape == (1, 156, 2)
 
 
 def test_conversion_to_datetime():
     flights_dataset = FlightsDataset()
     first_date = flights_dataset.x[0, 0, :]
     dt = convert_year_month_array_to_datetime(first_date)
-    assert dt == datetime(1949, 1, 15, 0, 0)
+    assert dt == datetime(1949, 1, 15)
 
 
 def test_vector_conversion_to_datetime():

@@ -104,7 +104,7 @@ class FlightsDataset(TimeSeriesDataset):
             year_df = year_df.append(
                 create_year_dataframe(new_years), ignore_index=True)
         input_features = [month_number_df, year_df]
-        return _raw_make_predictor(input_features, -1)
+        return _make_predictor(input_features, 1)
 
 
 def convert_year_month_array_to_datetime(year_month_array):
