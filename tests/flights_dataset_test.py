@@ -1,7 +1,3 @@
-"""
-main_test.py
-"""
-
 from flights_time_series_dataset import FlightsDataset, convert_year_month_array_to_datetime
 from datetime import datetime
 import numpy as np

@@ -11,7 +11,6 @@ from datetime import datetime
 
 from time_series_dataset import TimeSeriesDataset
 
-
 def _raw_make_predictor(features, *reshape_args):
     #pylint: disable=too-many-function-args
     return np.concatenate(features, axis=-1).reshape(
@@ -22,7 +21,6 @@ def _make_predictor(features, number_of_training_examples):
     #pylint: disable=too-many-function-args
     return _raw_make_predictor(features, number_of_training_examples, -1)
 
-
 def _get_labels(input_features, output_features):
     def _features_to_label_list(features):
         return [list(feature)[0] for feature in features]
@@ -30,8 +28,6 @@ def _get_labels(input_features, output_features):
     labels['x'] = _features_to_label_list(input_features)
     labels['y'] = _features_to_label_list(output_features)
     return labels
-
-
 class FlightsDataset(TimeSeriesDataset):
     """
     FlightsDataset class
