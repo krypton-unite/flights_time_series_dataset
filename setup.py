@@ -19,6 +19,7 @@ setup(
     keywords=['Time series dataset'],
     url='https://github.com/krypton-unite/flights_time_series_dataset.git',
     download_url='https://pypi.org/project/flights-time-series-dataset/',
+    python_requires=">=3.7",
     install_requires = [
         'time-series-dataset',
         'time-series-dataset-generator',

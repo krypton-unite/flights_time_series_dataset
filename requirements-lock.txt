@@ -252,9 +252,9 @@ threadpoolctl==2.1.0 \
     --hash=sha256:38b74ca20ff3bb42caca8b00055111d74159ee95c4370882bbff2b93d24da725 \
     --hash=sha256:ddc57c96a38beb63db45d6c159b5ab07b6bced12c45a1f07b2b92f272aebfa6b
     # via scikit-learn
-time-series-dataset-generator==0.0.1 \
-    --hash=sha256:03c118f76e99efcc7c80e822b5c4419f6d97b019f934053ac474a38510c65f69 \
-    --hash=sha256:a06c84c830f8be661081c5d8b88ba3adb8b82daa7f5feed2ebc24a7145ed17a4
+time-series-dataset-generator==0.0.2 \
+    --hash=sha256:51ef5edc3dd7329805226b337f0f7be1f1d3c30002adf4ef12d4fcbf0d25c551 \
+    --hash=sha256:eb0f9b0022702430d27420c61bb5af73d9438908a2e62042e41c437b4f9ec67a
     # via flights_time_series_dataset (setup.py)
 time-series-dataset==0.0.5 \
     --hash=sha256:90e78f1e99de772bf54e7eded91e535d199b320929dd21c34270a74fc8b856c3 \
