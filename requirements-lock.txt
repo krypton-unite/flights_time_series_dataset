@@ -256,9 +256,9 @@ threadpoolctl==2.1.0 \
     --hash=sha256:38b74ca20ff3bb42caca8b00055111d74159ee95c4370882bbff2b93d24da725 \
     --hash=sha256:ddc57c96a38beb63db45d6c159b5ab07b6bced12c45a1f07b2b92f272aebfa6b
     # via scikit-learn
-time-series-dataset-generator==0.1.2 \
-    --hash=sha256:0e735f7f6210b2282421fed85483819f81534e2b458e848534ac2c4601fc5ac2 \
-    --hash=sha256:d77132236538bd0c4375160ac725c5e0495cd32c54e7a7bad76cb5f1caee154b
+time-series-dataset-generator==0.1.3 \
+    --hash=sha256:533ee53f46d94bee5e33472bd479fdf8fc1f469b537acd8d0163c183b6016fac \
+    --hash=sha256:da4b9d6c9f84b1b2066da7acff85c21316a4a6c44a6a78e46ff892b5a133d03f
     # via flights_time_series_dataset (setup.py)
 time-series-dataset==0.0.6 \
     --hash=sha256:27ba1e9779243ebeac2d69967c04fb211aee94cf47fdcc29b08d0ad0a97612e9 \
@@ -266,9 +266,9 @@ time-series-dataset==0.0.6 \
     # via
     #   flights_time_series_dataset (setup.py)
     #   time-series-dataset-generator
-time-series-generator==0.2.2 \
-    --hash=sha256:805634d306e9eab7326c9f528fba11fda239bc86e14955b2588da26d17727fd0 \
-    --hash=sha256:8e8e951702e48ac009ff1d8a8e19830f47af5a79db1b1fac6e1c0c1f6169ecf7
+time-series-generator==0.2.3 \
+    --hash=sha256:0d34949b002d0ce657e2a4304d63af8415c6d65bbd9c537454bfcb4291a9503f \
+    --hash=sha256:6dea5a149360c880e29b4e545f50e431e33c25746a108f93b148d8bf251b4d96
     # via time-series-dataset-generator
 torch==1.7.1+cu110 \
     --hash=sha256:2aa7c4219181e31fae146e5e42e395128214487fc7d016bc263fc60b354d22d6
