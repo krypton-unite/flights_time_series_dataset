@@ -22,7 +22,6 @@ setup(
     python_requires=">=3.7",
     install_requires = [
         'time-series-dataset-generator',
-        'pandas',
         'seaborn'
     ],
     extras_require={
