@@ -1,12 +1,11 @@
 import calendar
-import sys
 import seaborn as sns
 from time_series_dataset import TimeSeriesDataset
 from time_series_dataset_generator import make_time_series_dataset
 
 
 class FlightSeriesDataset(TimeSeriesDataset):
-    def __init__(self, pattern_length, n_to_predict, except_last_n, augmentation=0, batch_size=sys.maxsize, stride='auto'):
+    def __init__(self, pattern_length, n_to_predict, except_last_n, augmentation=0, stride='auto'):
         flights = sns.load_dataset("flights")
         input_features_labels = ['month', 'year']
         output_features_labels = ['passengers']
@@ -24,7 +23,6 @@ class FlightSeriesDataset(TimeSeriesDataset):
             input_features_labels,
             output_features_labels,
             except_last_n,
-            batch_size = batch_size,
             augmentation = augmentation,
             stride = stride,
             overlap = past_pattern_length - n_to_predict

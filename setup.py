@@ -21,7 +21,6 @@ setup(
     download_url='https://pypi.org/project/flights-time-series-dataset/',
     python_requires=">=3.7",
     install_requires = [
-        'time-series-dataset',
         'time-series-dataset-generator',
         'pandas',
         'seaborn'
