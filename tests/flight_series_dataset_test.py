@@ -6,7 +6,7 @@ from .fixtures import expected_shape
 @pytest.mark.parametrize('augmentation', [0])
 def test_series_dataset_shape(augmentation, expected_shape):
     exp = expected_shape(augmentation)
-    flight_series_dataset = FlightSeriesDataset(36, 12, 36, stride = 1, augmentation=augmentation)
+    flight_series_dataset = FlightSeriesDataset(36, 12, 36, stride = 1, augmentation=augmentation, generate_test_dataset=True)
     assert flight_series_dataset.get_y_shape() == exp['y_shape']
     assert flight_series_dataset.get_x_shape() == exp['x_shape']
     assert flight_series_dataset.test.y.shape == exp['y_test_shape']
