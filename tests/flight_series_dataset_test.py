@@ -1,5 +1,5 @@
 import pytest
-from flights_time_series_dataset import FlightSeriesDataset, flights_dataset
+from flights_time_series_dataset import FlightSeriesDataset
 from .fixtures import expected_results
 
 @pytest.mark.usefixtures('expected_results')
